@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project1.css">
+    <title>Micro Project 1</title>
+</head>
+<body>
+    <main id="main">
+        <section class="sec1">
+            <div><h1>An inspiring design delivered to your inbox every morning</h1></div>
+            <div><p class="one">Our team scouts the internet for the best designs, illustrations and art and delivers a truly inspiring one every day to your inbox</p></div>
+            <div id="form"><div><p class="two">Show me how it looks</p></div>
+            <div class="three">
+                <form id="content">
+                    <input type="email" placeholder="Your e-mail address" required>
+                    <button type="submit">Register Now</button>
+                </form>
+            </div></div>
+        <div><p class="four">Free - No Spam - No Data Sharing</p></div>
+        </section>
+        <section class="sec2">
+                <img src="Images/dweepio.png" alt="dweepio" class="img1">
+        </section>
+    </main>
+    <footer id="foot">
+        <section class="sec3">
+            <ul>
+                <li><a href="@">Prompt Generator</li></a>
+                <li><a href="@">Dweep Daily</a></li>
+                <li><a href="@">All Contributors</a></li>
+                <li><a href="@">Your data on Dweep.io</a></li>
+                <li><a href="@">Contribute to Dweep</a></li>
+            </ul>
+        </section>
+        <section class="sec4">
+            <ul>
+                <li><a href="@">Dweep.io</a></li>
+                <li>Made with love in India</li>
+                <li><img src="Images/LinkedinLogo.png" alt="LinkedinLogo"><img src="Images/InstagramLogo.png" alt="InstagramLogo"></li>
+                <br>
+                <li>hello@dweep.io</li>
+            </ul>
+        </section>          
+    </footer>
+    <script>
+        document.getElementById("content").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from being submitted
+            document.getElementById("form").innerHTML = "<h1>Thank You!</h1>";
+        });
+    </script>
+</body>
+</html>
